@@ -74,7 +74,7 @@
             display: flex;
             flex-direction: column;
             padding: 20px 0 0 20px;
-            row-gap: 5px;
+            row-gap: 7px;
         }
 
         .services a {
@@ -86,6 +86,14 @@
 
         .services a:hover {
             color: #faa203;
+        }
+
+        .tech-tag {
+            border: 1px solid #faa203;
+            padding: 0 5px;
+            color: #faa203;
+            filter: brightness(0.7);
+            margin: 0 2px
         }
 
         .socials {
@@ -139,8 +147,15 @@
     </div>
 
     <div class="services">
-        <a href="https://chromewebstore.google.com/detail/feidhhlmiedggofhpcncgdligbiofmoo" target="_blank">Quick Exchange Rate</a>
-        <a href="https://ip.middly.sh" target="_blank">ip.middly.sh</a>
+        <a href="https://chromewebstore.google.com/detail/feidhhlmiedggofhpcncgdligbiofmoo" target="_blank">
+            Quick Exchange Rate
+            <span class="tech-tag">JS</span>
+        </a>
+        <a href="https://ip.middly.sh" target="_blank">
+            ip.middly.sh
+            <span class="tech-tag">Go</span>
+            <span class="tech-tag">JS</span>
+        </a>
     </div>
 
     <div class="socials">
