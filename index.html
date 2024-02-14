@@ -78,6 +78,9 @@
         }
 
         .services a {
+            display: flex;
+            column-gap: 5px;
+            align-items: center;
             font-size: 1em;
             text-decoration: none;
             color: #999999;
@@ -86,6 +89,18 @@
 
         .services a:hover {
             color: #faa203;
+        }
+
+        .services img {
+            width: 16px;
+            height: 16px;
+            filter: brightness(0.8);
+
+            -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ijc5My40IDYwNC41IDMwMCAzMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0xMDkzLjQgNjk4LjR2LTEwLjdjMC0zLS4xLTYtLjEtOS4xLS4yLTYuNi0uNi0xMy4yLTEuNy0xOS43LTEuMi02LjYtMy4xLTEyLjctNi4yLTE4LjctMy01LjktNi45LTExLjMtMTEuNi0xNi00LjctNC43LTEwLjEtOC42LTE2LTExLjYtNi0zLjEtMTIuMS01LTE4LjctNi4yLTYuNS0xLjItMTMuMS0xLjYtMTkuNy0xLjctMy0uMS02LS4xLTkuMS0uMUg4NzYuNmMtMyAwLTYgLjEtOS4xLjEtNi42LjItMTMuMi42LTE5LjcgMS43LTYuNiAxLjItMTIuNyAzLjEtMTguNyA2LjItNS45IDMtMTEuMyA2LjktMTYgMTEuNi00LjcgNC43LTguNiAxMC4xLTExLjYgMTYtMy4xIDYtNSAxMi4xLTYuMiAxOC43LTEuMiA2LjUtMS42IDEzLjEtMS43IDE5LjctLjEgMy0uMSA2LS4xIDkuMXYxMzMuN2MwIDMgLjEgNiAuMSA5LjEuMiA2LjYuNiAxMy4yIDEuNyAxOS43IDEuMiA2LjYgMy4xIDEyLjcgNi4yIDE4LjcgMyA1LjkgNi45IDExLjMgMTEuNiAxNiA0LjcgNC43IDEwLjEgOC42IDE2IDExLjYgNiAzLjEgMTIuMSA1IDE4LjcgNi4yIDYuNSAxLjIgMTMuMSAxLjYgMTkuNyAxLjcgMyAuMSA2IC4xIDkuMS4xaDEzMy43YzMgMCA2LS4xIDkuMS0uMSA2LjYtLjIgMTMuMi0uNiAxOS43LTEuNyA2LjYtMS4yIDEyLjctMy4xIDE4LjctNi4yIDUuOS0zIDExLjMtNi45IDE2LTExLjZzOC42LTEwLjEgMTEuNi0xNmMzLjEtNiA1LTEyLjEgNi4yLTE4LjcgMS4yLTYuNSAxLjYtMTMuMSAxLjctMTkuNy4xLTMgLjEtNiAuMS05LjF2LTEyM3oiLz48L3N2Zz4=");
+        }
+
+        .services a:hover img {
+            filter: brightness(1);
         }
 
         .tech-tag {
@@ -128,7 +143,7 @@
 </head>
 <body>
     <div class="content">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
             <defs>
               <clipPath>
                 <rect width="1024" height="1024"/>
@@ -147,6 +162,11 @@
     </div>
 
     <div class="services">
+        <a href="https://paperday.middly.sh" target="_blank">
+            <img src="assets/paperday.png" alt="paperday"/>
+            Paperday
+            <span class="tech-tag">Swift</span>
+        </a>
         <a href="https://chromewebstore.google.com/detail/feidhhlmiedggofhpcncgdligbiofmoo" target="_blank">
             Quick Exchange Rate
             <span class="tech-tag">JS</span>
